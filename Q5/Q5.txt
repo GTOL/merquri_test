@@ -1,0 +1,4 @@
+SELECT players.Name, scores.Sport, scores.Score AS [Total Score]
+FROM players
+RIGHT JOIN scores ON players.Player_no = scores.Player_no
+ORDER BY scores.Score DESC
