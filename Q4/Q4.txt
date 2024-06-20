@@ -1,0 +1,12 @@
+Make the annotation class level, by moving it before the class declaration, and removing all @PreAuthorize annotation from functions.
+
+@Controller
+@PreAuthorize("hasRole('XXX')")
+public class foo {
+
+    @GetMapping("/bar")
+    public String bar() {
+        return "hello world";
+    }
+
+}
